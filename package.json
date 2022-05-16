@@ -1,0 +1,22 @@
+{
+  "name": "s3-file-date-remove",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:deividdysousa/s3-file-date-remove.git",
+  "author": "deividdy <deividdyn@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist",
+    "dev": "nodemon src/index.js",
+    "build": "sucrase ./src -d ./dist --transforms imports"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1135.0",
+    "dotenv": "^16.0.1",
+    "moment": "^2.29.3",
+    "sucrase": "^3.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
